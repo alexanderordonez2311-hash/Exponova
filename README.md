@@ -1,2 +1,0 @@
-# Exponova
-Proyecto Exponova
