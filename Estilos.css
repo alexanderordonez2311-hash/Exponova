@@ -1,0 +1,701 @@
+/* ==========================================
+   EXPENOVA - DISEÑO MINIMALISTA
+========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f3;
+    color: #2f2f2f;
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   ENCABEZADO EXPENOVA - BANNER COMPACTO
+========================================== */
+
+/* ENCABEZADO EXPENOVA */
+
+header.banner-expenova {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    min-height: 120px;
+
+    margin: 20px auto 25px;
+    padding: 15px 25px;
+
+    background: #ffffff;
+    border: 1px solid #ececec;
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* CONTENEDOR DEL LOGO */
+
+.banner-expenova .contenido-banner {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGEN DEL LOGO */
+
+.banner-expenova .contenido-banner img {
+    width: auto;
+    max-width: 100%;
+    height: 200px;
+
+    object-fit: contain;
+    display: block;
+}
+/* CONTENEDOR DEL LOGOTIPO */
+
+.banner-expenova .contenido-banner {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+/* LOGOTIPO ORIGINAL */
+
+.banner-expenova .logo-expenova {
+    display: block;
+
+    width: 100%;
+    max-width: 650px;
+
+    height: 125px;
+    max-height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* ==========================================
+   CONTENIDO PRINCIPAL
+========================================== */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+
+/* ==========================================
+   SECCIONES
+========================================== */
+
+.formulario-seccion,
+.herramientas-seccion,
+.tabla-seccion {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 24px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ececec;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1f1f1f;
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   CAMPOS DEL FORMULARIO
+========================================== */
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label,
+.grupo-herramienta label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.campo input,
+.campo textarea,
+.grupo-herramienta input,
+.grupo-herramienta select {
+    width: 100%;
+    padding: 14px 16px;
+
+    border: 1px solid #dddddd;
+    border-radius: 14px;
+
+    font-size: 15px;
+    font-family: inherit;
+
+    background: #fafafa;
+    color: #2f2f2f;
+
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.campo input:focus,
+.campo textarea:focus,
+.grupo-herramienta input:focus,
+.grupo-herramienta select:focus {
+    border-color: #b8b8b8;
+    background: #ffffff;
+
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.04);
+}
+
+.campo textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.campo small {
+    display: block;
+    margin-top: 6px;
+    color: #8a8a8a;
+    font-size: 0.85rem;
+}
+
+
+/* ==========================================
+   BOTONES
+========================================== */
+
+button {
+    border: none;
+    padding: 12px 18px;
+    border-radius: 14px;
+
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: inherit;
+
+    transition: all 0.25s ease;
+}
+
+#btnGuardar,
+#btnBuscar,
+#btnOrdenar,
+#btnCifrar,
+#btnDescifrar {
+    background: #1f1f1f;
+    color: #ffffff;
+}
+
+#btnGuardar:hover,
+#btnBuscar:hover,
+#btnOrdenar:hover,
+#btnCifrar:hover,
+#btnDescifrar:hover {
+    background: #000000;
+    transform: translateY(-1px);
+}
+
+#btnCancelar {
+    background: #e9e9e9;
+    color: #333;
+}
+
+#btnCancelar:hover {
+    background: #dcdcdc;
+    transform: translateY(-1px);
+}
+
+.botones-formulario {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+
+/* ==========================================
+   HERRAMIENTAS
+========================================== */
+
+.grupo-herramienta {
+    margin-bottom: 22px;
+    padding: 18px;
+
+    border-radius: 18px;
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+}
+
+.fila-herramienta {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fila-herramienta input,
+.fila-herramienta select {
+    flex: 1;
+    min-width: 200px;
+}
+
+
+/* ==========================================
+   MENSAJES
+========================================== */
+
+#mensaje {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+
+/* ==========================================
+   TABLA DE EXPEDIENTES
+========================================== */
+
+.titulo-tabla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+#contador {
+    background: #f3f3f3;
+    color: #555;
+
+    padding: 8px 14px;
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+    border: 1px solid #e3e3e3;
+}
+
+.contenedor-tabla {
+    overflow-x: auto;
+    margin-top: 15px;
+    border-radius: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+thead tr {
+    background: #f7f7f7;
+}
+
+th {
+    color: #2a2a2a;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+th,
+td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #ececec;
+    text-align: center;
+}
+
+tbody tr {
+    transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+    background: #fafafa;
+}
+
+tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+
+/* ==========================================
+   BOTONES DE ACCIONES
+========================================== */
+
+.btn-editar {
+    background: #dbeafe;
+    color: #1d4ed8;
+    margin-right: 6px;
+}
+
+.btn-editar:hover {
+    background: #bfdbfe;
+}
+
+.btn-eliminar {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.btn-eliminar:hover {
+    background: #fecaca;
+}
+
+
+/* ==========================================
+   MÉTRICAS DE ORDENAMIENTO
+========================================== */
+
+#contadorComparaciones {
+    display: inline-block;
+
+    background: #f4f4f4;
+    padding: 10px 14px;
+
+    border-radius: 14px;
+    border: 1px solid #e6e6e6;
+
+    color: #444;
+    font-size: 0.95rem;
+}
+
+
+/* ==========================================
+   DISEÑO RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+    main {
+        width: 95%;
+    }
+
+    header.banner-expenova {
+        width: 95%;
+        height: 115px;
+        min-height: 0;
+
+        margin: 15px auto 20px;
+        padding: 10px 15px;
+
+        border-radius: 15px;
+    }
+
+    .banner-expenova .logo-expenova {
+        width: 100%;
+        max-width: 100%;
+        height: 95px;
+        max-height: 100%;
+    }
+
+    .formulario-seccion,
+    .herramientas-seccion,
+    .tabla-seccion {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .titulo-tabla {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .botones-formulario,
+    .fila-herramienta {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .fila-herramienta input,
+    .fila-herramienta select {
+        min-width: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+/* ==========================================
+   PANTALLAS PEQUEÑAS
+========================================== */
+
+@media (max-width: 420px) {
+
+    header.banner-expenova {
+        height: 100px;
+        min-height: 0;
+        padding: 8px 12px;
+    }
+
+    .banner-expenova .logo-expenova {
+        height: 80px;
+        max-height: 100%;
+    }
+}
+
+
+/* ==========================================
+   BÚSQUEDA (INTEGRANTE 3)
+========================================== */
+
+#resultadoBusqueda,
+#contadorBusqueda {
+    display: inline-block;
+
+    background: #f4f4f4;
+    padding: 10px 14px;
+
+    border-radius: 14px;
+    border: 1px solid #e6e6e6;
+
+    color: #444;
+    font-size: 0.95rem;
+}
+
+#resultadoBusqueda.encontrado {
+    background: #dcfce7;
+    border-color: #86efac;
+    color: #166534;
+}
+
+#resultadoBusqueda.no-encontrado {
+    background: #fee2e2;
+    border-color: #fca5a5;
+    color: #b91c1c;
+}
+
+/* Fila resaltada cuando se encuentra el expediente */
+tbody tr.fila-encontrada {
+    background: #fef9c3;
+}
+
+/* ==========================================
+   MODO CLARO Y MODO OSCURO
+   BOTÓN EN LA ESQUINA SUPERIOR DERECHA
+========================================== */
+.boton-tema {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: auto;
+    min-width: 112px;
+    padding: 11px 15px;
+    background: #ffffff;
+    color: #16233a;
+    border: 1px solid #dbe1eb;
+    border-radius: 30px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+}
+.boton-tema:hover {
+    background: #f0f5ff;
+    transform: translateY(-1px);
+}
+.boton-tema:focus-visible {
+    outline: 3px solid #3b82f6;
+    outline-offset: 3px;
+}
+.boton-tema svg { display: block; width: 21px; height: 21px; }
+.boton-tema .icono-sol { display: none; }
+.boton-tema .texto-tema { font-size: 13px; font-weight: 700; }
+
+body { transition: background-color 0.25s ease, color 0.25s ease; }
+body.modo-oscuro { background: #101722; color: #e7edf5; color-scheme: dark; }
+body.modo-oscuro .boton-tema {
+    background: #243349;
+    border-color: #43536b;
+    color: #f8c85b;
+}
+body.modo-oscuro .boton-tema:hover { background: #30435d; }
+body.modo-oscuro .boton-tema .icono-luna { display: none; }
+body.modo-oscuro .boton-tema .icono-sol { display: block; }
+
+/* El logo original tiene letras oscuras: el banner mantiene un fondo claro para que se lea. */
+body.modo-oscuro header.banner-expenova {
+    background: #e9edf4;
+    border-color: #364258;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.24);
+}
+body.modo-oscuro .formulario-seccion,
+body.modo-oscuro .herramientas-seccion,
+body.modo-oscuro .tabla-seccion {
+    background: #1a2535;
+    border-color: #334156;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+body.modo-oscuro h2 { color: #f3f7fc; }
+body.modo-oscuro .campo label,
+body.modo-oscuro .grupo-herramienta label { color: #dbe5f2; }
+body.modo-oscuro .campo small,
+body.modo-oscuro .grupo-herramienta small { color: #b3c1d2; }
+body.modo-oscuro .grupo-herramienta {
+    background: #202d40;
+    border-color: #35465e;
+}
+body.modo-oscuro .campo input,
+body.modo-oscuro .campo textarea,
+body.modo-oscuro .grupo-herramienta input,
+body.modo-oscuro .grupo-herramienta select {
+    background: #111b29;
+    border-color: #40516a;
+    color: #f3f6fb;
+}
+body.modo-oscuro .campo input:focus,
+body.modo-oscuro .campo textarea:focus,
+body.modo-oscuro .grupo-herramienta input:focus,
+body.modo-oscuro .grupo-herramienta select:focus {
+    background: #172438;
+    border-color: #65a9ff;
+    box-shadow: 0 0 0 3px rgba(101, 169, 255, 0.17);
+}
+body.modo-oscuro input::placeholder,
+body.modo-oscuro textarea::placeholder { color: #a6b4c8; }
+body.modo-oscuro #btnGuardar,
+body.modo-oscuro #btnBuscar,
+body.modo-oscuro #btnOrdenar,
+body.modo-oscuro #btnCifrar,
+body.modo-oscuro #btnDescifrar { background: #2459a4; color: #fff; }
+body.modo-oscuro #btnGuardar:hover,
+body.modo-oscuro #btnBuscar:hover,
+body.modo-oscuro #btnOrdenar:hover,
+body.modo-oscuro #btnCifrar:hover,
+body.modo-oscuro #btnDescifrar:hover { background: #326dc4; }
+body.modo-oscuro #btnCancelar { background: #37465b; color: #f0f3f8; }
+body.modo-oscuro #btnCancelar:hover { background: #465974; }
+body.modo-oscuro #contador,
+body.modo-oscuro #contadorComparaciones,
+body.modo-oscuro #contadorBusqueda,
+body.modo-oscuro #resultadoBusqueda {
+    background: #26364d;
+    color: #e5edf8;
+    border-color: #40536c;
+}
+body.modo-oscuro table { background: #1a2535; }
+body.modo-oscuro thead tr { background: #2a3a50; }
+body.modo-oscuro th { color: #f0f4fa; }
+body.modo-oscuro td,
+body.modo-oscuro th { border-bottom-color: #36465c; }
+body.modo-oscuro tbody tr:nth-child(even) { background: #202d40; }
+body.modo-oscuro tbody tr:hover { background: #33465f; }
+body.modo-oscuro .btn-editar { background: #294e80; color: #e0edff; }
+body.modo-oscuro .btn-eliminar { background: #713544; color: #ffe8eb; }
+body.modo-oscuro #resultadoBusqueda.encontrado { background: #1b583f; color: #c5f7dd; border-color: #2f9566; }
+body.modo-oscuro #resultadoBusqueda.no-encontrado { background: #67303b; color: #ffe0e5; border-color: #a94c5b; }
+body.modo-oscuro tbody tr.fila-encontrada { background: #665620; color: #fff5c9; }
+
+@media (max-width: 700px) {
+    .boton-tema { top: 8px; right: 8px; min-width: 0; padding: 9px 11px; }
+    .boton-tema .texto-tema { display: none; }
+    .boton-tema svg { width: 22px; height: 22px; }
+}
+
+
+/* ==========================================
+   DASHBOARD - PANEL IZQUIERDO
+   No modifica los estilos del formulario.
+========================================== */
+.distribucion-expenova {
+    width: min(96%, 1500px);
+    margin: 0 auto 35px;
+    display: grid;
+    grid-template-columns: 295px minmax(0, 1fr);
+    align-items: start;
+    gap: 22px;
+}
+.distribucion-expenova main {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+}
+.panel-dashboard {
+    position: sticky;
+    top: 18px;
+    background: #ffffff;
+    border: 1px solid #e4e9f0;
+    border-radius: 22px;
+    padding: 20px 18px;
+    box-shadow: 0 8px 30px rgba(20, 40, 60, .06);
+}
+.panel-dashboard-titulo { display:flex; align-items:center; gap:12px; margin-bottom:20px; }
+.panel-dashboard-punto { display:block; width:12px; height:12px; background:#00a6ef; border-radius:50%; box-shadow:0 0 0 5px rgba(0,166,239,.12); }
+.panel-dashboard-etiqueta { font-size:10px; letter-spacing:1.5px; color:#64748b; font-weight:700; }
+.panel-dashboard h2 { font-size:20px; margin:2px 0 0; color:#14243b; }
+.panel-dashboard-bloque { background:#f6f9fd; border:1px solid #e6edf5; border-radius:17px; padding:15px; margin-bottom:14px; }
+.panel-dashboard-subtitulo {font-size:13px; font-weight:700; color:#334155; margin-bottom:14px;}
+.anillo-expedientes, .anillo-algoritmos {
+    width:150px; height:150px; border-radius:50%; margin:4px auto 18px;
+    display:grid; place-items:center;
+    background:conic-gradient(#1097dd 0 76%, #dcebf5 76% 100%);
+}
+.anillo-algoritmos { width:140px; height:140px; background:conic-gradient(#dcebf5 0 100%); }
+.anillo-centro { width:110px; height:110px; background:#f6f9fd; border-radius:50%; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.anillo-algoritmos .anillo-centro { width:102px; height:102px; }
+.anillo-centro strong { font-size:32px; line-height:1.15; color:#123456; font-variant-numeric:tabular-nums; }
+.anillo-centro span { font-size:11px; color:#64748b; }
+.panel-dashboard-linea { display:flex; justify-content:space-between; align-items:center; gap:10px; margin:10px 0; color:#475569; font-size:12px; }
+.panel-dashboard-linea > span { display:flex; align-items:center; gap:7px; }
+.panel-dashboard-linea strong { color:#142b45; font-variant-numeric:tabular-nums; }
+.leyenda-punto { width:9px; height:9px; border-radius:3px; display:inline-block; flex-shrink:0; }
+.leyenda-punto.azul {background:#1685ec}.leyenda-punto.cian {background:#16c8de}.leyenda-punto.violeta {background:#986af4}.leyenda-punto.celeste {background:#60a5fa}
+.panel-dashboard-ayuda {color:#788699; font-size:11px; line-height:1.5; margin-top:11px;}
+.panel-dashboard-enlace {display:block; text-align:center; padding:12px; background:#0967ad; border-radius:12px; color:#fff; text-decoration:none; font-size:13px; font-weight:600;}
+.panel-dashboard-enlace:hover { background:#07538c; }
+body.modo-oscuro .panel-dashboard {background:#162335; border-color:#31435b; box-shadow:0 8px 28px rgba(0,0,0,.18)}
+body.modo-oscuro .panel-dashboard h2 {color:#eff6ff}
+body.modo-oscuro .panel-dashboard-bloque {background:#1c2c40; border-color:#344a64}
+body.modo-oscuro .panel-dashboard-subtitulo, body.modo-oscuro .panel-dashboard-linea strong {color:#e2edfa}
+body.modo-oscuro .panel-dashboard-linea, body.modo-oscuro .panel-dashboard-ayuda, body.modo-oscuro .panel-dashboard-etiqueta {color:#acbed5}
+body.modo-oscuro .anillo-centro {background:#1c2c40}
+body.modo-oscuro .anillo-centro strong {color:#f0f8ff}
+body.modo-oscuro .anillo-centro span {color:#b3c5d9}
+@media(max-width:1050px) {
+    .distribucion-expenova {grid-template-columns:240px minmax(0,1fr); gap:14px; width:96%}
+    .panel-dashboard {padding:16px 12px}
+}
+@media(max-width:780px) {
+    .distribucion-expenova {display:flex; flex-direction:column; width:95%}
+    .panel-dashboard {width:100%; position:static; display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    .panel-dashboard-titulo, .panel-dashboard-enlace {grid-column:1 / -1; margin-bottom:0}
+    .panel-dashboard-bloque {margin-bottom:0}
+    .distribucion-expenova main {width:100%}
+}
+@media(max-width:510px) {
+    .panel-dashboard {display:block}
+    .panel-dashboard-titulo, .panel-dashboard-bloque {margin-bottom:12px}
+}
